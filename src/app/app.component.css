@@ -1,0 +1,176 @@
+.nav img{
+    width: 130px;
+}
+
+.nav{
+    background-color: rgb(247, 247, 247);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.nav button{
+position: absolute;
+left: 15px;}
+ 
+mat-drawer-content{
+    overflow: hidden;
+}
+.imagemPrincipal{
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../assets/img/entradaSite.jpg");
+    background-size: cover;
+    
+   
+    
+}
+.textPricipal{
+    margin-top: 40vh;
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: rgb(243, 3, 3);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 0 0 15px #0000FF, 3px 3px 5px black;
+}
+
+.corpoSite{
+    background-color: aliceblue;
+}
+.historia {
+    padding: 30px;
+    color: #0b0b0c;
+    text-align: justify;
+    font-size: larger;
+}
+.historia h3{
+    font-size: xx-large;
+    text-shadow:3px 3px 5px rgb(255, 2, 2);
+
+
+}
+.lista{
+    color: aqua !important;    
+}
+.carroselModalidades {
+    width:300px;
+    height: 400px;
+
+  
+}
+.carousel-caption img{
+    image-rendering: optimizeQuality;
+}
+.mat-cell{
+    color: #ffffff;
+}
+.contato{
+    width: 100%;
+    padding-bottom: 25px;
+    font-size: xx-large;
+    background-size: 120%;
+    position: relative;
+    padding-top: 15px;
+   
+ }
+ .contato h3{
+    font-size: xx-large;
+    text-shadow:3px 3px 5px rgb(255, 2, 2);
+    color: #0b0b0c;
+ }
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    padding-left: 10%;
+    padding-top: 15px;
+ }
+ .icones{
+    padding-bottom: 10px;
+    padding-top:10px ;
+    margin-left: 30%;
+ }
+.icones img{
+    width: 60px;
+    margin-right: 15px;
+}
+.carousel-caption{
+    margin:0;
+    left: 0;
+    background-color: #0b0b0c;
+    width: 98%;
+    opacity: 0.7;
+    padding: 2px;
+}
+.imgModalidade{
+    max-height: 300px;
+}
+.alerta{
+    background-color: red;
+    color:wheat;
+    height: 100%;
+    font-size: xx-large;
+    text-align: center;
+}
+.carousel{
+    margin-bottom: 25px;
+}
+footer{
+    background-color: #0000FF;
+    text-align: center;
+
+}
+footer a{
+    text-decoration: none;
+    color: honeydew;
+}
+.iconSite{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+mat-drawer{
+    width: 30vw;
+    height: 50vh;
+    display: block;
+    position: fixed;
+    margin-top: 10vw;
+}
+.barraLateral{
+    width:100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #424242;
+}
+.barraLateral li{
+    color: red;
+    background-color: #424242;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    .imagemPrincipal{
+       background-image:url(../assets/img/entradaSiteMobile.jpg);
+       min-height: 90vh;
+
+    }
+
+    .carroselModalidades {
+        width:auto;
+      
+    }
+    
+    .formulario{
+        width:100%  ; 
+        }
+        mat-drawer{
+            width: 50vw;
+            margin-top: 40vw;
+        }
+}

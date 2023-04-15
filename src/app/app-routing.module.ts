@@ -7,4 +7,9 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+  imagesInstrutores=
+    [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  
+
+}
