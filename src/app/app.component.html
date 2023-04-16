@@ -1,29 +1,34 @@
 <mat-drawer-container class="BodySite">
-  <mat-drawer #drawer mode="over" opened="">
+  <mat-drawer #drawer mode="over">
     <div class="row barraLateral">
-      <img class="iconSite" src="../assets/img/icone.png" alt="icone do site">
+      <img class="iconSite" src="../assets/img/tkdKick.gif" alt="icone do site">
+      <h4 class="titulo-menu">Taekwondo Family</h4>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">link1;</li>
-        <li class="list-group-item">Rlink2</li>
-        <li class="list-group-item">link3</li>
+        <li class="list-group-item"><a href="#home">Home</a></li>
+        <li class="list-group-item"><a href="#historia">História</a></li>
+        <li class="list-group-item"><a href="#taekwondo">Taekwondo</a></li>
+        <li class="list-group-item"><a href="#modalidades">Modalidades</a></li>
+        <li class="list-group-item"><a href="#grade">Grade</a></li>
+        <li class="list-group-item"><a href="#contato">Contato</a></li>
+        <li class="list-group-item"><a href="#clientes">Clientes</a></li>
       </ul>
     </div>
   
 
   </mat-drawer>
   <mat-drawer-content>
-    <div class="nav">
+    <div  class="nav">
       <img src="../assets/img/logo.png" alt="Logo Academia Taekwondo Family">
-      <button mat-fab color="primary"   (click)="drawer.toggle()"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon></button>
+      <button mat-fab class="btnFix"   (click)="drawer.toggle()"><mat-icon aria-hidden="true" aria-label="Example home icon" fontIcon="menu"></mat-icon></button>
     </div>
-    <div class="corpoSite">
+    <div id="home" class="corpoSite">
       <div  class="imagemPrincipal img-fluid ">
         <h1 class="textPricipal">Taekwondo Family</h1>
     </div>
       <div class="row ">
       <div class="col-lg-1 col-sm-12"></div>
       <div class="col-lg-9 col-sm-12 historia">
-            <h3>Nossa história</h3>
+            <h3 id="historia">Nossa história</h3>
            
             <p>Nossa família está no mercado há mais de 20 anos, meus familiares imigraram para Santos vindo da Córea do Sul nos meados do anos 80.</p>
             <p>Meu pai iniciou a jornada aqui trabalhando como peixeiro, porém nunca abandonou as suas raizes e praticava Taekwondo todos os dias!</p>
@@ -36,7 +41,7 @@
     <div class="row ">
       <div class="col-lg-1 col-sm-12"></div>
       <div class="col-lg-9 col-sm-12 historia">
-            <br><h3>Sobre Taekwondo</h3>
+            <br><h3 id="taekwondo">Sobre Taekwondo</h3>
            
             <p>O Taekwondo é uma arte marcial desenvolvido pelos militares Coreanos, é conhecida como <q><i>a arte dos homens voadores</i></q>. </p>
             <p>A palavra taekwondo é formada por três termos: tae (pés), kwon (mãos) e do (caminho espiritual). Dessa forma, essa arte marcial significa “caminho dos pés e mãos através da mente”, sendo uma prática que exige disciplina e autocontrole dos participantes.</p>
@@ -81,7 +86,7 @@
       <div class="row ">
         <div class="col-lg-1 col-sm-12"></div>
         <div class="col-lg-9 col-sm-12 historia">
-             <h3>Muito Além do taekwondo</h3>
+             <h3 id="modalidades">Muito Além do taekwondo</h3>
             <p>Hoje a nossa academia conta com outras modalidades como:</p> 
 
             <div class="row">
@@ -153,7 +158,7 @@
       <div class="row ">
         <div class="col-lg-1 col-sm-12"></div>
         <div class="col-lg-9 col-sm-12 historia">
-             <h3>Nossa grade de horarios</h3>
+             <h3 id="grade">Nossa grade de horarios</h3>
             <p>Confira nossa grade horários:</p> 
            
             <div class="table-responsive-sm">
@@ -202,7 +207,7 @@
         <div class="col-lg col-sm-12"></div>
       </div>
       <div class="row contato">
-        <div class="col-lg-12 col-sm-12 formulario">
+        <div id="contato" class="col-lg-12 col-sm-12 formulario">
             <h3>Contato</h3>
             <div class="icones">
                 <a href="https://www.instagram.com/eliceiaaraujo.adv/" target="_blank" rel="_blank"><img src="../assets/img/instagram-icon.png" alt="Instagram Eliceia Araujo Advocacia" ></a>
@@ -236,8 +241,8 @@
     </div>
     <div class="row ">
       <div class="col-lg-1 col-sm-12"></div>
-      <div class="col-lg-9 col-sm-12 historia">
-            <br><h3>Clientes</h3>
+      <div class="col-lg-9 col-sm-12 historia clientes">
+            <br><h3 id="clientes">Clientes</h3>
            
             <ngb-carousel class="carroselModalidades mx-auto d-block carousel carousel-fade " [showNavigationIndicators]="showNavigationIndicators">
               <ng-template ngbSlide >

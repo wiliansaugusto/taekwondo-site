@@ -12,9 +12,15 @@
     padding-bottom: 10px;
 }
 .nav button{
-position: absolute;
-left: 15px;}
- 
+position: fixed;
+left: 15px;
+
+}
+.btnFix{
+    color: white;
+    background-color: #0000FF;
+    box-shadow: -2px -2px 15px  #000000;
+}
 mat-drawer-content{
     overflow: hidden;
 }
@@ -22,9 +28,7 @@ mat-drawer-content{
     width: 100vw;
     height: 90vh;
     background-image: url("../assets/img/entradaSite.jpg");
-    background-size: cover;
-    
-   
+    background-size: cover;   
     
 }
 .textPricipal{
@@ -136,23 +140,49 @@ footer a{
     text-align: center;
 }
 mat-drawer{
+    overflow: hidden;
     width: 30vw;
-    height: 50vh;
+    height: 60vh;
     display: block;
     position: fixed;
     margin-top: 10vw;
+    background-color: #918d8d;
 }
 .barraLateral{
+    overflow: hidden;
     width:100%;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #424242;
+    background-color: #918d8d;
 }
 .barraLateral li{
-    color: red;
-    background-color: #424242;
+    color: darkred;
+    background-color: #918d8d;
     text-align: center;
+}
+.barraLateral a{
+    text-decoration: none;
+    color: darkred;
+}
+.barraLateral a:hover{
+    text-decoration: none;
+    color: darkblue;
+    font-size: x-large;
+}
+.barraLateral li:hover{
+    background-color: white;
+}
+.titulo-menu{
+    text-align: center;
+    color:darkred ;
+    display: block;
+    position: relative;
+    left: 15px;
+    
+}
+.card{
+    margin-bottom: 8px;
 }
 @media screen and (max-width: 600px){
     .imagemPrincipal{
@@ -163,7 +193,7 @@ mat-drawer{
 
     .carroselModalidades {
         width:auto;
-      
+      padding-bottom:25px ;
     }
     
     .formulario{
@@ -173,4 +203,15 @@ mat-drawer{
             width: 50vw;
             margin-top: 40vw;
         }
+.clientes{
+    margin-bottom: 25px;
+}
+      .card{
+            margin-bottom: 8px;
+      }
+      .nav button{
+        position: fixed;
+        left: 10px;
+        }
+      
 }
